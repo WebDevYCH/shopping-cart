@@ -1,0 +1,51 @@
+html,
+body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.header-bar {
+  align-items: center;
+  border-bottom: 1px solid #999;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
+.app-content {
+  display: flex;
+  flex: 1;
+  flex-flow: row;
+}
+
+.products-browser {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  flex: 1 0 70%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 1em;
+}
+
+.shopping-cart {
+  border-left: 1px solid #999;
+  flex: 0 1 30%;
+  padding: 1em;
+}
+
+.roundel {
+  display: block;
+  border-radius: 24px;
+  height: 48px;
+  width: 48px;
+}
